@@ -22,3 +22,22 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Agent files
+/AGENTS.md
+
+# Local environment and package-manager credentials
+.env
+.env.*
+!.env.example
+.npmrc
+
+# Secrets, private keys, and local certificates
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore

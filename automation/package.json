@@ -1,0 +1,18 @@
+{
+  "name": "poke-platform-agent-orchestration",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "agent:init": "node orchestrator.mjs init",
+    "agent:validate": "node orchestrator.mjs validate",
+    "agent:status": "node orchestrator.mjs status",
+    "agent:run": "node orchestrator.mjs run",
+    "agent:inspect": "node orchestrator.mjs inspect",
+    "agent:approve": "node orchestrator.mjs approve",
+    "agent:reject": "node orchestrator.mjs reject"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "^0.144.0",
+    "yaml": "^2.8.1"
+  }
+}

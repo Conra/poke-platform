@@ -1,0 +1,33 @@
+poke-platform/
+├── AGENTS.md                         # already created at repo root
+├── backend/
+│   └── AGENTS.md
+├── frontend/
+│   └── AGENTS.md
+├── docs/
+│   ├── architecture.md
+│   ├── agent-protocol.md
+│   ├── testing-strategy.md
+│   ├── genai.md
+│   ├── product/
+│   │   └── requirements.md
+│   ├── tasks/
+│   │   ├── TASK_TEMPLATE.md
+│   │   ├── active/
+│   │   │   ├── TASK-001-foundation.md
+│   │   │   ├── TASK-002-pokemon-catalog.md
+│   │   │   ├── TASK-003-pokemon-details.md
+│   │   │   ├── TASK-004-auth.md
+│   │   │   ├── TASK-005-local-pokemon.md
+│   │   │   ├── TASK-006-frontend-public.md
+│   │   │   └── TASK-007-frontend-local.md
+│   │   └── completed/
+│   ├── prompts/
+│   │   ├── orchestrator.md
+│   │   ├── feature-agent.md
+│   │   ├── reviewer.md
+│   │   └── integration-agent.md
+│   └── decisions/
+│       └── ADR_TEMPLATE.md
+└── .github/
+    └── pull_request_template.md
