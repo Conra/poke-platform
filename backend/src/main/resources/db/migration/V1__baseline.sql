@@ -1,0 +1,1 @@
+-- Establishes Flyway ownership of the schema. Product tables are added by feature migrations.

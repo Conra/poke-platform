@@ -41,3 +41,16 @@ service-account*.json
 *.pfx
 *.jks
 *.keystore
+
+# Build output and dependency caches
+backend/target/
+frontend/node_modules/
+frontend/dist/
+.m2/
+.npm-cache/
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

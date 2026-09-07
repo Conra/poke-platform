@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: poke-platform-backend
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/poke_platform}
+    username: ${DATABASE_USERNAME:poke_platform}
+    password: ${DATABASE_PASSWORD}
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+server:
+  port: ${SERVER_PORT:8080}
