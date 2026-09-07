@@ -1,0 +1,42 @@
+settings:
+  base_branch: main
+  max_parallel: 3
+  max_review_rounds: 2
+  worktree_root: ../poke-platform-worktrees
+  reasoning_effort: high
+
+tasks:
+  TASK-001:
+    name: Project Foundation
+    spec: docs/tasks/active/TASK-001-foundation.md
+    depends_on: []
+
+  TASK-002:
+    name: Pokemon Catalog
+    spec: docs/tasks/active/TASK-002-pokemon-catalog.md
+    depends_on: [TASK-001]
+
+  TASK-003:
+    name: Pokemon Details
+    spec: docs/tasks/active/TASK-003-pokemon-details.md
+    depends_on: [TASK-001]
+
+  TASK-004:
+    name: Authentication
+    spec: docs/tasks/active/TASK-004-auth.md
+    depends_on: [TASK-001]
+
+  TASK-005:
+    name: Local Pokemon
+    spec: docs/tasks/active/TASK-005-local-pokemon.md
+    depends_on: [TASK-002, TASK-003, TASK-004]
+
+  TASK-006:
+    name: Public Frontend
+    spec: docs/tasks/active/TASK-006-frontend-public.md
+    depends_on: [TASK-002, TASK-003]
+
+  TASK-007:
+    name: Local Management Frontend
+    spec: docs/tasks/active/TASK-007-frontend-local.md
+    depends_on: [TASK-004, TASK-005, TASK-006]
